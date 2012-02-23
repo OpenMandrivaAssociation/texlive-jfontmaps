@@ -1,16 +1,16 @@
-# revision 25317
+# revision 25349
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
+# catalog-ctan /language/japanese/jfontmaps
+# catalog-date 2012-02-10 14:42:49 +0100
+# catalog-license gpl3
 # catalog-version undef
 Name:		texlive-jfontmaps
-Version:	20120208
+Version:	20120210
 Release:	1
-Summary:	TeXLive jfontmaps package
+Summary:	Font maps for Japanese fonts
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/language/japanese/jfontmaps
+License:	GPL3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.x86_64-linux.tar.xz
@@ -21,7 +21,9 @@ Requires(post):	texlive-kpathsea
 Provides:	texlive-jfontmaps.bin = %{EVRD}
 
 %description
-TeXLive jfontmaps package.
+The package offers font maps, and supporting material, that
+make various Japanese fonts available to users of (u)ptex and
+related programs or formats.
 
 %post
     %{_sbindir}/texlive.post
@@ -35,30 +37,39 @@ TeXLive jfontmaps package.
 %files
 %{_bindir}/updmap-setup-kanji
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-hiragino.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-ipa.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-ipaex.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-kozuka.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-morisawa.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-up-hiragino.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-up-ipa.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-up-ipaex.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-up-kozuka.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/otf-up-morisawa.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-hiragino-04.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-hiragino.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-ipa.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-ipaex.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-kozuka-04.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-kozuka.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-morisawa-04.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/ptex-morisawa.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-hiragino-04.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-hiragino.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-ipa.map
+%{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-ipaex.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-kozuka-04.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-kozuka.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-morisawa-04.map
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/uptex-morisawa.map
 %{_texmfdistdir}/scripts/jfontmaps/updmap-setup-kanji.pl
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/ChangeLog
 %doc %{_texmfdistdir}/doc/fonts/jfontmaps/README
 %doc %{_texmfdistdir}/doc/fonts/jfontmaps/updmap-otf.sh
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c  -a0 -a1 -a2
+%setup -c -a0 -a1 -a2
 
 %build
 
