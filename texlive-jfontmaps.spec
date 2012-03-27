@@ -1,4 +1,4 @@
-# revision 25544
+# revision 25641
 # category Package
 # catalog-ctan /language/japanese/jfontmaps
 # catalog-date 2012-02-10 14:42:49 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-jfontmaps
 Version:	20120210
-Release:	3
+Release:	4
 Summary:	Font maps for Japanese fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/jfontmaps
