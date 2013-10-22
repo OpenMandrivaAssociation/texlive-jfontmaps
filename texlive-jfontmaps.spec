@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-jfontmaps
 Version:	20130411
-Release:	1
+Release:	2
 Summary:	Font maps and configuration tools for Japanese fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/jfontmaps
@@ -35,8 +35,9 @@ related programs or formats.
 
 #-----------------------------------------------------------------------
 %files
-%{_bindir}/updmap-setup-kanji
-%{_bindir}/updmap-setup-kanji-sys
+%{_bindir}/kanji-config-updmap
+%{_bindir}/kanji-config-updmap-sys
+%{_bindir}/kanji-fontmap-creator
 %{_texmfdistdir}/fonts/cmap/jfontmaps/2004-H
 %{_texmfdistdir}/fonts/cmap/jfontmaps/2004-V
 %{_texmfdistdir}/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/otf-hiragino-pron.map
@@ -132,8 +133,9 @@ related programs or formats.
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/jfontmaps/updmap-setup-kanji.pl updmap-setup-kanji
-    ln -sf %{_texmfdistdir}/scripts/jfontmaps/updmap-setup-kanji-sys.sh updmap-setup-kanji-sys
+    ln -sf %{_texmfdistdir}/scripts/jfontmaps/kanji-config-updmap.pl kanji-config-updmap
+    ln -sf %{_texmfdistdir}/scripts/jfontmaps/kanji-config-updmap-sys.sh kanji-config-updmap-sys
+    ln -sf %{_texmfdistdir}/scripts/jfontmaps/kanji-fontmap-creator.pl kanji-fontmap-creator
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
