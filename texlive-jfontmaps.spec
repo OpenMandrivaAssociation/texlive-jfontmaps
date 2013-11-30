@@ -1,12 +1,12 @@
-# revision 30011
+# revision 32211
 # category Package
 # catalog-ctan /language/japanese/jfontmaps
-# catalog-date 2013-04-11 22:52:04 +0200
+# catalog-date 2013-11-20 12:37:39 +0100
 # catalog-license gpl3
-# catalog-version undef
+# catalog-version 20131120.0
 Name:		texlive-jfontmaps
-Version:	20130411
-Release:	2
+Version:	20131120
+Release:	1
 Summary:	Font maps and configuration tools for Japanese fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/jfontmaps
@@ -23,7 +23,14 @@ Provides:	texlive-jfontmaps.bin = %{EVRD}
 %description
 The package offers font maps, and supporting material, that
 make various Japanese fonts available to users of (u)ptex and
-related programs or formats.
+related programs or formats. The package does not ship any of
+the fonts mentioned in the documention, but only map files for
+dvipdfmx; the user must obtain the other fonts separately. The
+first exception is that ipa and ipaex the respective fonts a
+shipped as part of the TeX Live distribution and are available
+for free. The other exception is that the Yu Mincho/Gothic
+fonts are available to Windows and MacOSX users, as part of
+their operating system distribution.
 
 %post
     %{_sbindir}/texlive.post
@@ -109,6 +116,17 @@ related programs or formats.
 %doc %{_texmfdistdir}/doc/fonts/jfontmaps/examples/otf-sample-04.tex
 %doc %{_texmfdistdir}/doc/fonts/jfontmaps/examples/otf-sample.tex
 %doc %{_texmfdistdir}/doc/fonts/jfontmaps/examples/ptex-sample.tex
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/examples/series-compare.tex
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-osx/otf-up-yu-osx.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-osx/otf-yu-osx.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-osx/ptex-yu-osx-04.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-osx/ptex-yu-osx.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-osx/uptex-yu-osx-04.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-osx/uptex-yu-osx.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-win/otf-up-yu-win.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-win/otf-yu-win.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-win/ptex-yu-win.map
+%doc %{_texmfdistdir}/doc/fonts/jfontmaps/yu-win/uptex-yu-win.map
 #- source
 %doc %{_texmfdistdir}/source/jfontmaps/jis04cmap_exp/JISX0213-2004-H
 %doc %{_texmfdistdir}/source/jfontmaps/jis04cmap_exp/JISX0213-2004-V
