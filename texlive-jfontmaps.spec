@@ -6,7 +6,7 @@
 # catalog-version 20131120.0
 Name:		texlive-jfontmaps
 Version:	20131120
-Release:	3
+Release:	4
 Summary:	Font maps and configuration tools for Japanese fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/jfontmaps
