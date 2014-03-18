@@ -1,16 +1,16 @@
-# revision 32722
+# revision 33067
 # category Package
 # catalog-ctan /language/japanese/jfontmaps
-# catalog-date 2013-11-20 12:37:39 +0100
-# catalog-license gpl3
-# catalog-version 20131120.0
+# catalog-date 2014-03-01 10:19:34 +0100
+# catalog-license other-free
+# catalog-version 20140301.0
 Name:		texlive-jfontmaps
-Version:	20131120
-Release:	6
+Version:	20140301
+Release:	1
 Summary:	Font maps and configuration tools for Japanese fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/jfontmaps
-License:	GPL3
+License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.source.tar.xz
@@ -25,12 +25,12 @@ The package offers font maps, and supporting material, that
 make various Japanese fonts available to users of (u)ptex and
 related programs or formats. The package does not ship any of
 the fonts mentioned in the documention, but only map files for
-dvipdfmx; the user must obtain the other fonts separately. The
-first exception is that ipa and ipaex the respective fonts a
-shipped as part of the TeX Live distribution and are available
-for free. The other exception is that the Yu Mincho/Gothic
-fonts are available to Windows and MacOSX users, as part of
-their operating system distribution.
+use with dvipdfmx; the user must obtain the other fonts
+separately. The first exception is that ipa and ipaex the
+respective fonts a shipped as part of the TeX Live distribution
+and are available for free. The other exception is that the Yu
+Mincho/Gothic fonts are available to Windows and MacOSX users,
+as part of their operating system distribution.
 
 %post
     %{_sbindir}/texlive.post
