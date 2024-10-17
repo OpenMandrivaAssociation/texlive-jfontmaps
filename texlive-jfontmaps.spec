@@ -9,7 +9,7 @@ Version:	20140301
 Release:	7
 Summary:	Font maps and configuration tools for Japanese fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/japanese/jfontmaps
+URL:		https://www.ctan.org/tex-archive/language/japanese/jfontmaps
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jfontmaps.doc.tar.xz
